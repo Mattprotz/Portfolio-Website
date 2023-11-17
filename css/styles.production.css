@@ -1,0 +1,308 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(173, 209, 217)), to(rgb(82, 128, 138)));
+    background: -o-linear-gradient(top left, rgba(173, 209, 217), rgb(82, 128, 138));
+    background: linear-gradient(to bottom right, rgba(173, 209, 217), rgb(82, 128, 138));
+    padding: 15px;
+}
+
+body{
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(173, 209, 217)), to(rgb(82, 128, 138)));
+    background: -o-linear-gradient(top left, rgba(173, 209, 217), rgb(82, 128, 138));
+    background: linear-gradient(to bottom right, rgba(173, 209, 217), rgb(82, 128, 138));
+    padding: 15px;
+}
+
+header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center ;
+        -ms-flex-align: center ;
+            align-items: center ;
+    margin-bottom: 50px;
+    margin-left: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+.page-header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header_item{
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+
+.page-header_item:last-child{
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+
+nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* erase bullet points */
+.navigation-list{
+    list-style-type: none; 
+}
+
+.navigation-list li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.grid{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid_item{
+    background-color: rgb(150, 137, 217);
+}
+
+h1{
+    font-size: 50px;
+    text-align: left;
+}
+
+
+
+h2{
+    font-size: 25px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+}
+
+.profile{
+    max-width: 700px;
+    margin: 5 auto;
+}
+
+.profile_portrait{
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 60%;
+}
+
+p{
+    padding: 5px;
+}
+
+.profile-header{
+    font-size: 40px;
+}
+
+.address{
+    margin-bottom: 20px;
+}
+
+.page-footer{
+    clear: both;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+}
+
+button,
+.button{
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: inherit;
+    font-style: italic;
+    background-color: lightblue;
+    color: black;
+    padding: 15px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus
+{
+    cursor: pointer;
+    opacity: 100%;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    opacity: 50%;
+}
+
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+a:visited{
+    color: rgb(0, 0, 0);
+}
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+a:active{
+    color: rgb(180, 180, 180);
+}
+
+.sun{
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: color-change;
+            animation-name: color-change;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+.cloud-front{
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: cloud-move;
+            animation-name: cloud-move;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+
+@keyframes color-change {
+    0% {
+      fill: #edc655;
+    }
+    50% {
+      fill: #fcffad;
+    }
+    100% {
+      fill: #f76414;
+    }
+  }
+
+  @-webkit-keyframes cloud-move {
+    from{
+        -webkit-transform: translate(44px, 48px);
+                transform: translate(44px, 48px);
+    }
+    to{
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+  }
+
+  @keyframes cloud-move {
+    from{
+        -webkit-transform: translate(44px, 48px);
+                transform: translate(44px, 48px);
+    }
+    to{
+        -webkit-transform: translate(100px, 48px);
+                transform: translate(100px, 48px);
+    }
+  }
+  @-webkit-keyframes cloud-move-reverse {
+    from {
+      -webkit-transform: translate(100px, 48px);
+              transform: translate(100px, 48px);
+    }
+    to {
+      -webkit-transform: translate(44px, 48px);
+              transform: translate(44px, 48px);
+    }
+  }
+  @keyframes cloud-move-reverse {
+    from {
+      -webkit-transform: translate(100px, 48px);
+              transform: translate(100px, 48px);
+    }
+    to {
+      -webkit-transform: translate(44px, 48px);
+              transform: translate(44px, 48px);
+    }
+  }
+
+  .cloud-back{
+    -webkit-animation: 4s cloud-move-reverse infinite alternate linear;
+            animation: 4s cloud-move-reverse infinite alternate linear;
+  }
+
+@media all and (max-width:750px){
+    .grid{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media all and (max-width: 644px) {
+    .grid{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;  
+    }
+}
