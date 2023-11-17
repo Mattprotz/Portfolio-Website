@@ -1,19 +1,48 @@
 :root{
-    --background-color: linear-gradient(to bottom right, rgba(173, 209, 217), rgb(82, 128, 138));
+    --background-color: linear-gradient(to bottom, rgb(0, 0, 0), rgb(31, 31, 31));
     --background-grid:  rgb(150, 137, 217);
     --color: black;
+    --text-color:rgba(62, 196, 47);
 }
 
 
-*{
-    box-sizing: border-box;
-}
 
 html, body{
     height: 100%;
-    background: var(--background-color);
+    background: var(--color);
+}
+
+main-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    color: var(--text-color);
     padding: 15px;
 }
+
+img.img1{
+    margin: 0;
+    padding: 15px;
+    padding-right: 0;
+    filter: drop-shadow(0 3px 2px var(--text-color));
+
+}
+
+img.img2{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h1{
+    margin: 0;
+    font-size: 65px;
+    padding: 15px;
+    padding-left: 0;
+    color: var(--text-color);
+    filter: drop-shadow(0 1px 3px var(--text-color));
+}
+
 
 header{
     display: flex;
@@ -24,12 +53,12 @@ header{
 
 ul{
     list-style: none;
+    color: var(--text-color);
 }
 
 .page-header{
     display: flex;
-    width: 100%;
-    padding: 20px;
+    width: flex;
 }
 
 .page-header_item{
@@ -52,7 +81,7 @@ nav{
 
 .navigation-list li{
     display: inline-block;
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 body{
@@ -68,24 +97,22 @@ body{
 
 .grid_item{
     background-color: rgb(150, 137, 217);
+    color: var(--text-color);
+
 }
-
-h1{
-    font-size: 50px;
-    text-align: left;
-}
-
-
 
 h2{
     font-size: 25px;
     justify-content: center;
     text-align: center;
+    color: var(--text-color);
 }
 
 .profile{
-    max-width: 700px;
-    margin: 5 auto;
+    justify-content: center;
+    text-align: center;
+    /* margin: 5 auto; */
+    
 }
 
 .profile_portrait{
@@ -93,18 +120,28 @@ h2{
     width: 250px;
     margin-right: 40px;
     border-radius: 60%;
+    filter: drop-shadow(0 1px 3px);
+    justify-content: center;
+    text-align: center;
 }
 
 p{
-    padding: 5px;
+    padding: 50px;
+    color: var(--text-color);
+    filter: drop-shadow(0 1px 3px);
 }
 
 .profile-header{
     font-size: 40px;
+    filter: drop-shadow(0 1px 3px);
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
 }
 
 .address{
     margin-bottom: 20px;
+    
 }
 
 .page-footer{
@@ -113,17 +150,20 @@ p{
     text-align: center;
     display: flex;
     padding: 10px;
+
+    
 }
 
 button,
 .button{
-    border: 2px solid black;
+    border: 2px solid var(--text-color);
     border-radius: 5px;
     text-decoration: none;
     font-family: inherit;
     font-style: italic;
-    background-color: lightblue;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: var(--text-color);
+    filter: drop-shadow(0 1px 3px);
     padding: 15px;
     margin: 15px;
     cursor: pointer;
@@ -138,16 +178,18 @@ button:focus,
     opacity: 100%;
     transition-duration: 0.5s;
     transition-property: opacity;
-    opacity: 50%;
+    opacity: 75%;
 }
 
 
 a{
-    color: rgb(0, 0, 0);
+    color: var(--text-color);
+    filter: drop-shadow(0 1px 3px);
 }
 
 a:visited{
-    color: rgb(0, 0, 0);
+    color: var(--text-color);;
+    
 }
 
 a:hover, a:focus{
@@ -158,54 +200,7 @@ a:active{
     color: rgb(180, 180, 180);
 }
 
-.sun{
-    animation-duration: 5s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
 
-.cloud-front{
-    animation-duration: 5s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-@keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
-  }
-
-  @keyframes cloud-move {
-    from{
-        transform: translate(44px, 48px);
-    }
-    to{
-        transform: translate(100px, 48px);
-    }
-  }
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(100px, 48px);
-    }
-    to {
-      transform: translate(44px, 48px);
-    }
-  }
-
-  .cloud-back{
-    animation: 4s cloud-move-reverse infinite alternate linear;
-  }
 
 @media all and (max-width:750px){
     .grid{
