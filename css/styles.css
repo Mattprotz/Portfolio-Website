@@ -1,3 +1,5 @@
+
+
 :root{
     --background-color: linear-gradient(to bottom, rgb(0, 0, 0), rgb(31, 31, 31));
     --background-grid:  rgb(150, 137, 217);
@@ -116,13 +118,11 @@ h2{
 }
 
 .profile_portrait{
-    float: left;
+    float: center;
     width: 250px;
-    margin-right: 40px;
-    border-radius: 60%;
+    /* border-radius: 60%; */
     filter: drop-shadow(0 1px 3px);
-    justify-content: center;
-    text-align: center;
+
 }
 
 p{
@@ -136,7 +136,7 @@ p{
     filter: drop-shadow(0 1px 3px);
     justify-content: center;
     text-align: center;
-    padding: 50px;
+    
 }
 
 .address{
@@ -156,6 +156,7 @@ p{
 
 button,
 .button{
+    display: inline-block;
     border: 2px solid var(--text-color);
     border-radius: 5px;
     text-decoration: none;
@@ -207,6 +208,15 @@ a:active{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
+    }
+
+    .button{
+        display: inline-block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: var(--text-color);
+        border-radius: 5px;
+        filter: drop-shadow(0 1px 3px);
     }
 }
 
