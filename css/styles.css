@@ -28,7 +28,6 @@ html, body{
 
 main-header{
     display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
     display: inline-flex;
     color: var(--text-color);
@@ -91,6 +90,11 @@ ul{
 .page-header_item:last-child{
     flex-grow: 1;
     text-align: right;
+}
+
+.main-navigation{
+    display:flex;
+    margin: 0;
 }
 
 nav{
@@ -169,10 +173,10 @@ p{
 }
 
 .page-footer{
-    clear: both;
+    margin-top: 100px;
     justify-content: center;
     text-align: center;
-    display: flex;
+    display: inline-flex;
     padding: 10px;
 
     
@@ -224,8 +228,6 @@ a:hover, a:focus{
 a:active{
     color: rgb(180, 180, 180);
 }
-
-
 
 @media all and (max-width:750px){
     .grid{
